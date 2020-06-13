@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人展示</title>
+  <style>
+    body {
+         margin: 0;
+         padding: 0;
+  text-align: center;
+    }
+   ul {
+     list-style-type:none;
+     margin: 0;
+     padding: 0;
+   }
+   .container {
+     width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: row;
+   }
+   .header {
+     background-color: rgb(255,76,79);
+      height: 70px;width: 100%;
+      text-align: center;
+   }
+   .iocn {
+          width: 32px;height: 32px;
+   }
+      .header-title {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        height: 65px;
+        background-color: rgb(255,76,79);
+      }
+       .clearfix {
+         clear: both;
+       }
+      .nav ul
+          {
+	          display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(255,76,79);
+            height: 65px;
+           }
+           .nav ul>li {
+             display: flex;
+             flex-direction: row;
+             margin: 5;
+        
+           }
+           .nav ul>li>a {
+             display: inline-block;
+             padding: 8px;
+             color: white;
+           }
+      
+    .section-title {
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: row;
+     justify-content: space-between;  
+    
+    
+    }
+    .container.column {
+      flex-direction: column;
+    }
+    footer {
+      background-color:rgb(128,0,29) ;
+      min-height: 400px;
+    }
+    footer.left {
+      color:white;
+      padding:30px ;
+    }
+    img {width: 260px;margin: 3; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" >
+      <div class="header-title" >
+        <img src="imge/log.png" alt="log" class="iocn">
+        <span >不欢的爱好</span>   
+      </div>
+      <nav class="nav" >
+        <ul>
+          <li> <a href="#"> 喜欢的电影</a></li>
+          <li> <a href="#"> 喜欢的书</a></li>
+          <li> <a href="#"> meizi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<section>
+     <div class="container column" > 
+       <h2 class="section-title"> 喜欢的电影</h2>
+       <ul class="gallery" >
+        <li>
+          <img src="imge/大爆炸.jpg" alt="">
+           <h4>大爆炸</h4>
+        </li>
+        
+        <li><img src="imge/猎妖.jpg" alt="">
+        <h4>猎妖</h4>
+        </li>
+          
+        <li><img src="imge/英雄.jpg" alt=""> 
+        <h4>英雄</h4>
+        </li>
+
+       <li><img src="imge/隐士lu.jpg" alt="">
+        <h4>隐士</h4>
+         </li>
+      </ul>
+    </div>
+   </section>
+    
+
+   <section>
+    <div class="container column" > 
+      <h2 class="section-title"> 喜欢的书</h2>
+      <ul class="gallery" >
+       <li>
+         <img src="imge/1.jpg" alt="">
+          <h4>武术直播间</h4>
+       </li>
+       
+       <li><img src="imge/2.jpg" alt="">
+       <h4>又帅了</h4>
+       </li>
+         
+       <li><img src="imge/3.jpg" alt=""> 
+       <h4>一座山</h4>
+       </li>
+       <li><img src="imge/4.jpg" alt=""> 
+       <h4>回忆</h4>
+        </li>
+     </ul>
+   </div>
+  </section>
+   <footer>
+     <div class="container" >
+  <div class="left" >
+    收到你可能我看完
+  </div>
+
+     </div>
+   </footer>
+</body>
+</html>
