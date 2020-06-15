@@ -21,6 +21,7 @@
      display: flex;
      flex-direction: row;
    }
+  
    .header {
      background-color: rgb(255,76,79);
       height: 70px;width: 100%;
@@ -74,6 +75,11 @@
       flex-direction: column;
     }
     footer {
+     
+     width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: row;
       background-color:rgb(128,0,29) ;
       min-height: 400px;
     }
@@ -93,16 +99,16 @@
       </div>
       <nav class="nav" >
         <ul>
-          <li> <a href="#"> 喜欢的电影</a></li>
-          <li> <a href="#"> 喜欢的书</a></li>
-          <li> <a href="#"> meizi</a></li>
+          <li> <a href="#1"> 喜欢的电影</a></li>
+          <li> <a href="#2"> 喜欢的书</a></li>
+      
         </ul>
       </nav>
     </div>
   </header>
 <section>
      <div class="container column" > 
-       <h2 class="section-title"> 喜欢的电影</h2>
+       <h2  id="1" class="section-title"> 喜欢的电影</h2>
        <ul class="gallery" >
         <li>
           <img src="imge/大爆炸.jpg" alt="">
@@ -127,7 +133,7 @@
 
    <section>
     <div class="container column" > 
-      <h2 class="section-title"> 喜欢的书</h2>
+      <h2  id="2" class="section-title"> 喜欢的书</h2>
       <ul class="gallery" >
        <li>
          <img src="imge/1.jpg" alt="">
@@ -148,9 +154,9 @@
    </div>
   </section>
    <footer>
-     <div class="container" >
+     <div class="footer" >
   <div class="left" >
-    收到你可能我看完
+  <h1>只能做成这样了做不了了！</h1>
   </div>
 
      </div>
