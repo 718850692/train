@@ -2,7 +2,8 @@ $(function() {
                 
    $('.send').click(function() {    //设置“发送”按钮点击事件，将弹幕体显示在弹幕墙上
                    
-    var val = $('.content').val();  //获取文本输入框的内容            
+    var val = $('.content').val();  //获取文本输入框的内容 
+    $('.content').val('');   //清空文本    
     var $content = $('<div class="text">' + val + '</div>');//将文本框内容用div包裹起来，便于后续处理
                   
         $screen = $(document.getElementById("screen"));  //获取弹幕墙对象
