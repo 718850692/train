@@ -10,11 +10,11 @@ var Button = ReactBootstrap.Button
 var ListGroupItem = ReactBootstrap.ListGroupItem
 const Header = (props) => {
     const menuItems = [
-        'All',
+         'All',
+         'Java',
         'Javascript',
-        'Ruby',
-        'Java',
         'Css',
+        'Ruby',
         'Python'
     ]
 
@@ -70,7 +70,7 @@ class App extends React.Component {
         var url = ''
         switch (type) {
             case 'Javascript':
-                url = 'https://api.github.com/search/repositories?q=stars:%3E1+language:javascript&sort=stars&order=desc&type=Repositories'
+                url = 'httpgithub热门项目s://api.github.com/search/repositories?q=stars:%3E1+language:javascript&sort=stars&order=desc&type=Repositories'
                 break;
             case 'Ruby':
                 url = 'https://api.github.com/search/repositories?q=stars:%3E1+language:ruby&sort=stars&order=desc&type=Repositories'
@@ -91,11 +91,7 @@ class App extends React.Component {
                 beforeState.cards = []
             }
             this.setState(beforeState)
-            const res = await axios.get(url, {
-                headers: {
-                    'Authorization': 'token d008c83c02cf0492ed5a0261fc28afc9c5d292e0'
-                }
-            })
+            const res = await axios.get(url)
             console.log('res', res.data)
             const newCards = res.data.items.map((item, key) => ({
                 no: '#' + (page === 1 ? 1 + key : cards.length + 1 + key),
@@ -162,7 +158,7 @@ class App extends React.Component {
                 </Content>
                 <Footer>
                     <div className="text-center text-black jumbotron bg-light">
-                        <h5>版权所有 &copy; 无版权</h5>
+                       
                     </div>
                 </Footer>
             </div>
