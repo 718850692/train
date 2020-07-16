@@ -162,7 +162,7 @@ class App extends React.Component {
                 </Content>
                 <Footer>
                     <div className="text-center text-black jumbotron bg-light">
-                        <h5>版权所有 &copy; 张裕堂</h5>
+                        <h5>版权所有 &copy; 无版权</h5>
                     </div>
                 </Footer>
             </div>
